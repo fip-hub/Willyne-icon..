@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wilyne Icon</title>
+<link rel="stylesheet" href="style.css">
+<style>
+body { 
+    font-family: Arial, sans-serif; 
+    margin:0; 
+    padding:0; 
+    background:#f4f4f4; 
+    color:#333; 
+}
+header { 
+    background:#1a73e8; 
+    color:#fff; 
+    padding:25px 0; 
+    text-align:center; 
+    box-shadow:0 3px 6px rgba(0,0,0,0.2); 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+header h1 { 
+    margin:0; 
+    font-size:2.5em; 
+}
+nav { 
+    margin-top:10px; 
+}
+nav a { 
+    color:#fff; 
+    margin:0 15px; 
+    text-decoration:none; 
+    font-weight:bold; 
+    transition:color 0.3s; 
+}
+nav a:hover { 
+    color:#ffdd59; 
+}
+.hero { 
+    background:#155ab6; 
+    color:#fff; 
+    text-align:center; 
+    padding:120px 20px 80px 20px; 
+}
+.hero h2 { 
+    font-size:2.5em; 
+    margin-bottom:20px; 
+}
+.hero p { 
+    font-size:1.2em; 
+    margin-bottom:30px; 
+}
+button.cta { 
+    background:#ffdd59; 
+    color:#155ab6; 
+    padding:15px 30px; 
+    border:none; 
+    border-radius:5px; 
+    font-size:1em; 
+    cursor:pointer; 
+    transition: background 0.3s, transform 0.2s; 
+}
+button.cta:hover { 
+    background:#ffc107; 
+    transform: scale(1.05); 
+}
+section { 
+    padding:50px 20px; 
+    max-width:1200px; 
+    margin:30px auto; 
+    background:#fff; 
+    border-radius:10px; 
+    box-shadow:0 0 15px rgba(0,0,0,0.1); 
+}
+.services-grid, .reviews-grid, .gallery-grid { 
+    display:flex; 
+    flex-wrap:wrap; 
+    gap:20px; 
+    justify-content:center; 
+}
+.service-item, .review-item, .gallery-item { 
+    flex:1 1 300px; 
+    overflow:hidden; 
+    border-radius:10px; 
+    box-shadow:0 0 8px rgba(0,0,0,0.2); 
+    transition: transform 0.3s, box-shadow 0.3s; 
+    text-align:center; 
+    padding:40px 20px; 
+    font-weight:bold; 
+    background:#e8f0fe; 
+}
+.service-item:hover, .review-item:hover, .gallery-item:hover { 
+    transform: scale(1.05); 
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3); 
+}
+.gallery-item img {
+    max-width: 100%;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 10px;
+}
+footer { 
+    text-align:center; 
+    padding:20px; 
+    background:#222; 
+    color:#fff; 
+    margin-top:40px; 
+}
+@media (max-width: 768px) { 
+    .service-item, .review-item, .gallery-item { flex:1 1 100%; } 
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Wilyne Icon</h1>
+<nav>
+<a href="#about">About Us</a>
+<a href="#services">Services</a>
+<a href="#gallery">Our Work</a>
+<a href="#reviews">Reviews</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<h2>Transforming Ideas into Stunning Designs</h2>
+<p>Your brand deserves visuals that captivate, inspire, and leave a lasting impression. Let Wilyne Icon bring your vision to life!</p>
+<button class="cta" onclick="window.location.href='#contact'">Get Started Today</button>
+</section>
+
+<section id="about">
+<h2>About Us</h2>
+<p>Welcome to Wilyne Icon! We are a professional graphic design business dedicated to helping brands shine through creative visuals. From logos to marketing materials, we turn ideas into visually stunning realities that engage and inspire your audience.</p>
+<button class="cta" onclick="window.location.href='#contact'">Get a Quote</button>
+</section>
+
+<section id="services">
+<h2>Our Services</h2>
+<div class="services-grid">
+    <div class="service-item">
+        <h3>Brand Identity Design</h3>
+        <p>We create complete brand identities, from logos to business cards, ensuring your brand is recognized and remembered.</p>
+        <button class="cta" onclick="window.location.href='#contact'">Hire Us</button>
+    </div>
+    <div class="service-item">
+        <h3>Marketing Graphics</h3>
+        <p>Custom social media graphics, banners, and advertisements that attract attention and drive engagement.</p>
+        <button class="cta" onclick="window.location.href='#contact'">Hire Us</button>
+    </div>
+    <div class="service-item">
+        <h3>Digital Illustration</h3>
+        <p>Unique illustrations for websites, presentations, and campaigns that make your content stand out.</p>
+        <button class="cta" onclick="window.location.href='#contact'">Hire Us</button>
+    </div>
+    <div class="service-item">
+        <h3>Packaging Design</h3>
+        <p>Eye-catching packaging designs that communicate your product’s value and captivate customers.</p>
+        <button class="cta" onclick="window.location.href='#contact'">Hire Us</button>
+    </div>
+</div>
+</section>
+
+<section id="gallery">
+<h2>Our Work</h2>
+<div class="gallery-grid">
+    <div class="gallery-item">
+        <img src="images/sample1.jpg" alt="Sample Graphic 1">
+        <p>Creative Logo Design</p>
+    </div>
+    <div class="gallery-item">
+        <img src="images/sample2.jpg" alt="Sample Graphic 2">
+        <p>Social Media Banner</p>
+    </div>
+    <div class="gallery-item">
+        <img src="images/sample3.jpg" alt="Sample Graphic 3">
+        <p>Digital Illustration</p>
+    </div>
+</div>
+</section>
+
+<section id="reviews">
+<h2>What Our Clients Say</h2>
+<div class="reviews-grid">
+    <div class="review-item">
+        <p>"Wilyne Icon transformed our brand completely! Their designs are modern, creative, and perfectly suited to our audience." – <strong>Jane K.</strong></p>
+    </div>
+    <div class="review-item">
+        <p>"Professional, reliable, and extremely talented. The marketing graphics exceeded our expectations!" – <strong>Mark T.</strong></p>
+    </div>
+    <div class="review-item">
+        <p>"Our logo now truly represents our company’s vision. Highly recommend Wilyne Icon for any business needing quality design." – <strong>Sophia R.</strong></p>
+    </div>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact Us</h2>
+<p>Partner with Wilyne Icon and let us bring your brand’s vision to life. Reach out to discuss your project or design needs!</p>
+<p>Email: <a href="mailto:wilyneicon@example.com">wilyneicon@example.com</a></p>
+<p>Phone: <a href="tel:+254714784660">0714784660</a></p>
+<button class="cta" onclick="window.location.href='mailto:wilyneicon@example.com'">Email Us Now</button>
+</section>
+
+<footer>
+<p>&copy; 2025 Wilyne Icon. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
